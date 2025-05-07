@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Event Handling Styles */
+#event-section button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+#event-section button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.keypress-container {
+    margin: 20px 0;
+}
+
+#jump-emoji {
+    font-size: 2em;
+    transition: transform 0.2s;
+}
+
+/* Interactive Elements Styles */
+#dynamic-btn {
+    padding: 12px 24px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.slideshow {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.tab-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: #ecf0f1;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab.active {
+    background: #3498db;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    background: #ecf0f1;
+    border-radius: 0 0 5px 5px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Form Validation Styles */
+#form-section input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#form-section input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.error {
+    border-color: #e74c3c !important;
+}
+
+.success {
+    border-color: #2ecc71 !important;
+}
+
+.feedback {
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.error-text {
+    color: #e74c3c;
+}
+
+.success-text {
+    color: #2ecc71;
+}
+
+#password-strength {
+    height: 5px;
+    width: 100%;
+    background: #ecf0f1;
+    margin: 10px 0;
+}
+
+#strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+/* Secret Section */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #7f8c8d;
+    cursor: pointer;
+}
+
+#secret-message {
+    display: none;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+}

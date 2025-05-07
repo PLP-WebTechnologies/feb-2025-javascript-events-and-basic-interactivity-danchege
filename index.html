@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Playground</h1>
+    
+    <!-- Event Handling Section -->
+    <section id="event-section">
+        <h2>Event Handling </h2>
+        
+        <button id="click-btn">Click Me!</button>
+        <button id="hover-btn">Hover Over Me</button>
+        
+        <div class="keypress-container">
+            <p>Press the <strong>Up Arrow</strong> key:</p>
+            <div id="jump-emoji">🦘</div>
+        </div>
+    </section>
+    
+    <!-- Interactive Elements Section -->
+    <section id="interactive-section">
+        <h2>Interactive Elements 🎮</h2>
+        
+        <button id="dynamic-btn">Login</button>
+        
+        <div class="slideshow">
+            <img src="https://source.unsplash.com/random/800x400?nature" class="slide active" alt="Nature">
+            <img src="https://source.unsplash.com/random/800x400?city" class="slide" alt="City">
+            <img src="https://source.unsplash.com/random/800x400?animal" class="slide" alt="Animal">
+        </div>
+        
+        <div class="tab-container">
+            <div class="tab active" data-tab="tab1">Tab 1</div>
+            <div class="tab" data-tab="tab2">Tab 2</div>
+            <div class="tab" data-tab="tab3">Tab 3</div>
+        </div>
+        
+        <div class="tab-content active" id="tab1">
+            <p>Content for Tab 1 goes here.</p>
+        </div>
+        <div class="tab-content" id="tab2">
+            <p>Content for Tab 2 goes here.</p>
+        </div>
+        <div class="tab-content" id="tab3">
+            <p>Content for Tab 3 goes here.</p>
+        </div>
+    </section>
+    
+    <!-- Form Validation Section -->
+    <section id="form-section">
+        <h2>Form Validation </h2>
+        
+        <form id="validation-form">
+            <input type="text" id="name" placeholder="Name (required)">
+            <div class="feedback" id="name-feedback"></div>
+            
+            <input type="email" id="email" placeholder="Email">
+            <div class="feedback" id="email-feedback"></div>
+            
+            <input type="password" id="password" placeholder="Password (min 8 characters)">
+            <div id="password-strength">
+                <div id="strength-bar"></div>
+            </div>
+            <div class="feedback" id="password-feedback"></div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <!-- Secret Section -->
+    <footer id="secret-trigger">
+        <p>© 2023 Interactive Playground</p>
+        <div id="secret-message">SECRET UNLOCKED! You found the hidden message! �</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
